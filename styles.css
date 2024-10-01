@@ -1,0 +1,119 @@
+/* Definindo um esquema de cores */
+:root {
+    --cor-principal: #4CAF50; /* Verde */
+    --cor-secundaria: #ffffff; /* Branco */
+    --cor-acento: #333333; /* Preto */
+}
+
+/* Resetando margens e padding */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilizando o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--cor-secundaria);
+}
+
+/* Estilizando o cabeçalho */
+header {
+    background: var(--cor-acento);
+    color: var(--cor-secundaria);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+    display: flex; /* Flexbox para alinhar logotipo e navegação */
+    justify-content: space-between; /* Espaçar logotipo e nav */
+    align-items: center; /* Centralizar verticalmente */
+}
+
+.logo {
+    margin-left: 20px; /* Margem para o logotipo */
+}
+
+.logo h1 {
+    color: var(--cor-secundaria); /* Garantir que o logotipo fique visível */
+    font-size: 24px; /* Ajustar o tamanho do texto */
+}
+
+/* Estilizando a navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-right: 20px; /* Margem para a direita */
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Efeito hover nos links de navegação */
+nav a:hover {
+    color: var(--cor-principal);
+}
+
+/* Estilizando as seções do main */
+main {
+    padding: 70px 20px; /* espaço para o cabeçalho fixo */
+}
+
+h1, h2 {
+    color: var(--cor-acento);
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Estilizando o formulário de contato */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+label {
+    margin-bottom: 5px;
+    color: var(--cor-acento);
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid var(--cor-acento);
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--cor-acento);
+}
+
+/* Estilizando o rodapé */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--cor-acento);
+    color: var(--cor-principal);
+}
